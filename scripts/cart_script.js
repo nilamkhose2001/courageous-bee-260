@@ -1,4 +1,5 @@
 let cartDataFromLS = JSON.parse(localStorage.getItem("cart"));
+console.log(cartDataFromLS)
 display(cartDataFromLS);
 TotalSum();
 function display() {
@@ -11,10 +12,10 @@ function display() {
 
     let tdImg = document.createElement("td");
     let image = document.createElement("img");
-    image.setAttribute("src", el.img);
+    image.setAttribute("src", el.image);
 
     let name = document.createElement("td");
-    name.innerText = el.name;
+    name.innerText = el.product_name;
 
       let tdQty = document.createElement("td");
     let qty = document.createElement("input");
