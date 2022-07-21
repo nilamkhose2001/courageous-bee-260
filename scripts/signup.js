@@ -2,9 +2,15 @@ var form = document.querySelector(".signupform");
 
 var arr = JSON.parse(localStorage.getItem("user"))||[];
 
-import navbar from "./navport.js"
+import navbar from "../components/navbar.js"
+
 
 document.querySelector("#navbar").innerHTML = navbar();
+
+import footer from "../components/footer.js"
+
+
+document.querySelector("#footer").innerHTML = footer();
 
 class Signupdata
 {
@@ -41,6 +47,7 @@ let getdata = () =>
              element.value=null;
         })
     }
+    alert("signup successful")
     window.location.href = "login.html"
     }
 

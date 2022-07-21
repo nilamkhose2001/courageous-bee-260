@@ -1,3 +1,9 @@
+import navbar from "../components/navbar.js"
+
+
+document.querySelector("#navbar").innerHTML = navbar();
+
+
 let product = [
     {
         id: 1,
@@ -70,6 +76,7 @@ document.querySelector("#cartBtn").addEventListener("click",()=>{
    
    
 })
+
 
 
 

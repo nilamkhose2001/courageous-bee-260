@@ -1,7 +1,6 @@
 function footer()
 {
-    return`
-    <div class = "footer_a">
+    return `<div class = "footer_a">
         <div class = "footer_a_1">
             <h3>INFORMATION</h3>
             <ul>
@@ -25,7 +24,7 @@ function footer()
             <h5>Signup for the latest offers, updates and news</h5>
             <input type="text" placeholder="Your Email Address">
             <button>SUBSCRIBE</button>
-            <h5>Don’t worry we don’t spam</h5>
+            <h5>Don't worry we don't spam</h5>
         </div>
     </div>
     <div class = "footer_b">
