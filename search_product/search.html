@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./search.css">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/navbar.css">
+</head>
+<body>
+
+  <div id="navbar">
+
+  </div>
+    
+    <!-- Button trigger modal -->
+    
+    <button id="btn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/7289/7289312.png" alt="">
+      </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+        </div>
+        <div class="modal-body">
+          
+            <div id="container">
+
+                <div id="icon_div"> <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <span id="delete_icon"><i class="fa-solid fa-xmark"></i></span></button>
+          
+        </div>
+               
+             </div>
+                 <div id="box">
+                 <h5 id="grey">WHAT ARE YOU LOOKING FOR ?</h5>
+                 <input id="search_box" autocomplete="off" placeholder="search product" type="text"> <span id="search_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+             </div>
+             </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script type="module">
+   let Navbar=document.getElementById("navbar")
+    let minibox=  document.getElementById("search_box")
+    
+    minibox.onclick=function() {
+        minibox.style.borderWidth="1px"
+         minibox.style.borderColor="black"
+         
+         
+    }
+
+    document.getElementById("btn1").onclick=function() {
+    
+      document.getElementById("btn1").style.display="none";
+      Navbar.style.display="none"
+    }
+
+   
+   document.getElementById("delete_icon").onclick=function() {
+  
+
+     document.getElementById("btn1").style.display="inline"
+      
+   }
+  
+   import navbar from "./components/navbar.js"
+  
+   Navbar.innerHTML=navbar()
+
+   let btn=document.getElementById("btn1")
+
+   
+  document.getElementById("sear").onlclick=function() {
+    Navbar.style.display="none"
+    console.log("inside")
+
+  }
+
+   
+</script>
+

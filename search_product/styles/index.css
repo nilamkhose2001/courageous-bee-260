@@ -1,0 +1,116 @@
+#mainSlider{
+   
+    height:400px;
+}
+#mainSlider>img{
+    width:100%;
+    height:100%;
+    
+
+}
+
+#headingFirst{
+    font-family: roboto,sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+#firstHr{
+    width:50%;
+    border:1px solid #E5B95F;
+}
+#product{
+    /* border:1px solid; */
+    margin-top: 4%;
+    display: flex;
+    gap:20px;
+
+}
+#product>div{
+   
+    width:23%;
+    position: relative;
+   
+}
+
+/* #product>div:hover{
+   
+    background-color: rgba(0,0,0,0.5);
+    padding:6px;
+    position: relative;
+    z-index: 9999;
+} */
+
+#product>div>img{
+    width:100%;
+    border:3px solid #E5B95F;
+    border-radius: 10%;
+}
+
+#product>div>h3{
+    text-align: center;
+    font-family: roboto,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+/* #product>div>img:hover{
+    background-color: rgba(0,0,0,0.5);
+    padding:6px;
+    position: absolute;
+    z-index: 9999;
+} */
+
+#headingSecond{
+    font-family: roboto,sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+#secondHr{
+    width:25%;
+    border:1px solid #E5B95F;
+}
+#subsciption{
+    /* border:1px solid; */
+    width:23%;
+    margin-top: 50px;
+    margin-left: 25%;
+
+}
+.sub{
+    border: 1px solid #DFE4E6;
+    line-height: 3px;
+    text-align: center;
+    font-family: roboto,sans-serif;
+    color: #333333;
+}
+#sub3{
+    border: 1px solid #DFE4E6;
+    line-height: 3px;
+    text-align: center;
+    font-family: roboto,sans-serif;
+    color: #333333;
+    height: 250px;
+}
+#sub4{
+    border: 1px solid #DFE4E6;
+    line-height: 3px;
+    text-align: center;
+    font-family: roboto,sans-serif;
+    color: #333333;
+    height: 70px;
+    background-color: #E5B95F;
+}
+#sub4>button{
+    border:1px solid white;
+    background-color: #E5B95F;
+    color:white;
+    padding:3% 27%;
+    margin-top: 5%; 
+
+}

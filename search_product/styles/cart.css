@@ -1,0 +1,83 @@
+h1 {
+  margin-top: 80px;
+  font-weight: normal;
+  font-size: 50px;
+  margin-left: 10px;
+}
+#myCart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+#mainHeading{
+  font-family:poppins,sans-serif;
+}
+​
+#myCart > div {
+  width: 90%;
+  height: auto;
+  height: 300px;
+}
+button {
+  width: 60%;
+  margin-top: 30px;
+  height: 70px;
+  font-size: 20px;
+}
+table {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+table td,
+table th {
+  text-align: center;
+}
+table th {
+  height: 40px;
+}
+#update {
+  background-color: #343434;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 27px;
+}
+#checkout {
+  background-color: #e5b95f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+  margin-left: 27px;
+}
+input {
+  width: 40%;
+}
+​
+​
+#totalPrice {
+  background-color: #f7f7f7;
+  
+}
+#tPrice{
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 0px;
+  text-align: center;    
+}
+tr>td:nth-child(4){
+    width: 20%;
+}
+hr{
+  margin: 0;
+  width: 270%;
+}
+td img{
+  width: 70%;
+}

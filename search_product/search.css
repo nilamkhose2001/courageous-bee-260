@@ -1,0 +1,76 @@
+
+#container {
+    height: 60%;
+   
+   border: 1px solid blue;
+
+   
+}
+
+ #box{
+    margin-top: 40px;
+    height: 60%;
+    margin-top: 60px;
+    margin-left: 20px;
+    
+
+}
+
+
+
+ #grey {
+    color: grey;
+    margin-left: 24px;
+    font-size: 10px;
+    font-family: sans-serif;
+    
+ }
+
+
+
+ #search_box {
+    
+    width: 90%;
+color: #000;
+background: none;
+border: none;
+margin-left: 25px;
+border-bottom: 2px solid #ddd;
+font-weight: 700;
+padding: 6px 0 20px;
+height: auto;
+text-transform: lowercase;
+font-size: 36px;
+outline: none;
+
+ }
+
+ #search_icon {
+    font-size: 20px;
+ }
+
+#delete_icon {
+    font-size: 25px;
+    
+}
+
+#icon_div {
+    margin-top: 60px;
+    height: 20px;
+
+    width: 20px;
+    margin-left: 1250px;
+    
+}
+
+.btn-secondary{
+border: none;
+color: none;
+background-color:white;
+}
+
+#btn1 {
+    border: none;
+    background-color: white;
+    margin-left: 1200px;
+}
