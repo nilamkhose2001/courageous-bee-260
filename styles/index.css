@@ -20,6 +20,7 @@
 #firstHr{
     width:50%;
     border:1px solid #E5B95F;
+    margin: auto;
 }
 #product{
     /* border:1px solid; */
@@ -72,6 +73,7 @@
     margin-top: 50px;
 }
 #secondHr{
+    margin: auto;
     width:25%;
     border:1px solid #E5B95F;
 }
@@ -84,14 +86,15 @@
 }
 .sub{
     border: 1px solid #DFE4E6;
-    line-height: 3px;
+   
     text-align: center;
     font-family: roboto,sans-serif;
     color: #333333;
-}
+     padding: 5% 2%;
+} 
 #sub3{
     border: 1px solid #DFE4E6;
-    line-height: 3px;
+    /* line-height: 3px; */
     text-align: center;
     font-family: roboto,sans-serif;
     color: #333333;
@@ -99,7 +102,7 @@
 }
 #sub4{
     border: 1px solid #DFE4E6;
-    line-height: 3px;
+    /* line-height: 3px; */
     text-align: center;
     font-family: roboto,sans-serif;
     color: #333333;
