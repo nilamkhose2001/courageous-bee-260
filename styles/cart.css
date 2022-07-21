@@ -11,10 +11,7 @@ h1 {
   margin-top: 80px;
   margin-left: 30px;
 }
-#mainHeading{
-  font-family:poppins,sans-serif;
-}
-​
+
 #myCart > div {
   width: 90%;
   height: auto;
@@ -59,8 +56,8 @@ table th {
 input {
   width: 40%;
 }
-​
-​
+
+
 #totalPrice {
   background-color: #f7f7f7;
   
@@ -80,4 +77,10 @@ hr{
 }
 td img{
   width: 70%;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
 }
