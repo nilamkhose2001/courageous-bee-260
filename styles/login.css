@@ -1,0 +1,131 @@
+.login
+{
+    width : 28%;
+    height : 700px;
+    margin:auto;
+    padding-top: 70px;
+}
+#fb
+{
+    width: 100%;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    border-radius: 8px;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+#gm
+{
+    text-align: left;
+    padding-left: 20px;
+    height: 40px;
+    display: block;
+    background-size: 40px 40px;
+    border-radius: 8px;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 25px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 40px;
+    border-color: #c23321;
+    background-color: #dd4b39;
+    width : 100%;
+}
+.login>p{
+
+    color: #161616;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: normal;
+    margin: 0 0 30px;
+    outline: none;
+    text-align: center;
+
+}
+.sloginform
+{
+    width: 100%;
+
+}
+.loginform>label
+{
+    display: block;
+    color: #7a7a7a;
+    font-size: 16px;
+    margin-bottom: -10px;
+    font-weight: 700;
+}
+.loginform>input
+{
+    display: block;
+    margin-bottom: 3px;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 1px 3px #0000, 0 1px 2px #0000;
+    border-color: #e5e5e5;
+    height: 40px;
+    padding: 5px 10px;
+    line-height: 1.35;
+    border: 1px solid #cbcbcb;
+}
+#signup
+{
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 400;
+    background: #e5b95f ;
+    border-color: #e5b95f ;
+    color: #252525 ;
+}
+#signin
+{
+    width: 100%;
+    margin: 0px 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    box-shadow: none;
+    border: 0;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 400;
+    background: #e5b95f ;
+    border-color: #e5b95f;
+    color: #252525;
+}
+#signin:hover
+{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#signup:hover
+{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+h3
+{
+    text-align: center;
+    margin-top: 0px;
+}
+
+
