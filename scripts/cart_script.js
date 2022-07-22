@@ -1,3 +1,11 @@
+import navbar from "../components/navport.js"
+document.querySelector("#navbar").innerHTML = navbar();
+
+
+import footer from "../components/footer.js"
+
+document.querySelector(".footer").innerHTML = footer();
+
 let cartDataFromLS = JSON.parse(localStorage.getItem("cart"));
 console.log(cartDataFromLS)
 display(cartDataFromLS);
