@@ -12,7 +12,7 @@ display(cartDataFromLS);
 TotalSum();
 function display() {
     
-
+let totalPrice
   cartDataFromLS.forEach(function (el, index) {
       totalPrice = Number(el.price);
 
