@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <style>
         *{
             /* margin: 0px;
@@ -80,7 +80,8 @@
             margin-top: 100px;
             padding: 25;
             column-gap: 20px;
-            max-height: 800px;
+            margin-bottom: 30px;
+            /* max-height: 800px; */
         }
         .tabs input[type="radio"]{
             display: none;
@@ -127,14 +128,26 @@
         #customer{
             font-size: 30px;
         }
+        #moreProduct{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #rp{
+            font-family: sans-serif; 
+            font-size: 30px;
+        }
     </style>
 </head>
+
 <body>
     <div id="navbar">
 
     </div>
 
-    <div id="p1">
+    <div id="p2">
 
     </div>
 
@@ -224,24 +237,27 @@
 
     </div>
 
+    <div id="moreProduct">
+        <p id="rp">Related Product</p>
+        <div id="more">
+
+        </div>
+    </div>
+
     <div id="footer">
 
     </div>
 </body>
 </html>
 <script>
-    
 
-    // let product = ;
-    let h = JSON.parse(localStorage.getItem("product"))
-    // h.push(product);
-    let t = [h]
-    console.log(t);
-    let con = document.getElementById("p1")
+let list = JSON.parse(localStorage.getItem("product_li_2")) ||[]
+let  t = [list]
+let card = document.getElementById("p2")
 
-    let append2=(data)=>{
-        t.forEach((x)=>{
-            let {image,product_name,price}=x ;
+let append3=()=>{
+    t.forEach((x)=>{
+        let {image,product_name,price}=x ;
             let div1 = document.createElement("div");
             div1.setAttribute("id","box")
             let home = document.createElement("a")
@@ -296,18 +312,47 @@
 
             div2.append(home, name, s, desc, btn, social)
             div1.append(img, div2)
-            con.append(div1);
+            card.append(div1);
+    })
+};
+append3(t)
+
+let abcd = JSON.parse(localStorage.getItem("product_list"));
+
+let cards = document.getElementById("more");
+
+let append4=(data)=>{
+    abcd.forEach((m)=>{
+        let {image,product_name,price} = m;
+        let div = document.createElement("div")
+        div.style.cursor = "pointer"
+        let img = document.createElement("img")
+        img.src = image;
+        img.style.height = "165px"
+        let p = document.createElement("p")
+        p.innerText = product_name
+        let dam = document.createElement(`p`);
+        dam.innerText = `from Rs ${price}`;
+        dam.style.fontStyle = "italic";
+        dam.style.opacity = "0.4"
+        dam.style.fontFamily = "poppins"
+        div.append(img, p, dam)
+        cards.append(div)
+        img.addEventListener(`click`,()=>{
+            localStorage.setItem("product_li_2", JSON.stringify(m));
+            window.location.href = "./product_list_2.html"
         })
+    })
 
-    }
-    append2(t);
+}
+append4(abcd)
 
-    let cartData=JSON.parse(localStorage.getItem("cart")) || []
-console.log(typeof cartData)
+let cartData=JSON.parse(localStorage.getItem("cart")) || []
+// console.log(typeof cartData)
 document.querySelector("#btn").addEventListener("click",()=>{
     let flag=0
     cartData.forEach(({id})=>{
-        if(id==h.id)
+        if(id==list.id)
         {
             alert("product already in your cart")
             flag=1
@@ -316,7 +361,7 @@ document.querySelector("#btn").addEventListener("click",()=>{
     })
     if(flag==0)
     {
-        cartData.push(h)
+        cartData.push(list)
         localStorage.setItem("cart",JSON.stringify(cartData))
         alert("product added successfuly")
         window.location.href="cart.html"
@@ -324,5 +369,5 @@ document.querySelector("#btn").addEventListener("click",()=>{
    
    
 })
-   
+
 </script>
