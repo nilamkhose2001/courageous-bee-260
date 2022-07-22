@@ -2,10 +2,14 @@ var form = document.querySelector(".loginform");
 
 var arr = JSON.parse(localStorage.getItem("user"))||[];
 
-import navbar from "../components/navbar.js"
-
+import navbar from "../components/navport.js"
 
 document.querySelector("#navbar").innerHTML = navbar();
+
+import footer from "../components/footer.js"
+
+document.querySelector(".footer").innerHTML = footer();
+
 let logindata = () => 
 {
     event.preventDefault();
