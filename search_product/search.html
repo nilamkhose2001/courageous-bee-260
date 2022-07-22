@@ -13,15 +13,12 @@
 <link rel="stylesheet" href="styles/navbar.css">
 </head>
 <body>
-
   <div id="navbar">
 
   </div>
     
     <!-- Button trigger modal -->
     
-    <button id="btn1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="https://cdn-icons-png.flaticon.com/128/7289/7289312.png" alt="">
-      </button>
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -41,8 +38,15 @@
                
              </div>
                  <div id="box">
+                  <form action="">
                  <h5 id="grey">WHAT ARE YOU LOOKING FOR ?</h5>
+                
                  <input id="search_box" autocomplete="off" placeholder="search product" type="text"> <span id="search_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
+
+                <div id="results">
+
+                </div>
              </div>
              </div>
         </div>
@@ -51,6 +55,7 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
 
@@ -62,35 +67,168 @@
         minibox.style.borderWidth="1px"
          minibox.style.borderColor="black"
          
-         
     }
 
-    document.getElementById("btn1").onclick=function() {
-    
-      document.getElementById("btn1").style.display="none";
-      Navbar.style.display="none"
-    }
-
-   
-   document.getElementById("delete_icon").onclick=function() {
-  
-
-     document.getElementById("btn1").style.display="inline"
-      
-   }
   
    import navbar from "./components/navbar.js"
   
    Navbar.innerHTML=navbar()
 
-   let btn=document.getElementById("btn1")
+   
 
    
-  document.getElementById("sear").onlclick=function() {
-    Navbar.style.display="none"
-    console.log("inside")
+  document.getElementById('sear').addEventListener('click',searchfun)
 
+  function searchfun(){
+    document.querySelector(".modal-body").style.display="block"
+    // console.log('open')
   }
+  document.getElementById("delete_icon").onclick=function() {
+   // console.log("close")
+    // document.querySelector(".modal-body").style.transform='translateY(-300px)';
+    // document.querySelector(".modal-body").style.transition='0.5s';
+    document.querySelector(".modal-body").style.display='none'
+}
+
+
+let arrData= [
+   {
+      id: 1,
+      name: "SUGAR Born To Wing Gel Eyeliner - 03 Brown Sugar (Walnut Brown)",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/8904320702793A.jpg?v=1574400002", 
+      
+      Price: "599.00 ",
+   
+    },
+
+    {
+      id: 2,
+      name: "SUGAR Uptown Curl Lengthening Mini Mascara - 01 Black Beauty (Black) + SUGAR Wingman Waterproof Microliner - 01 I'll Be Black (Black)",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/SUGAR-Uptown-Curl-mini-mascara-_-SUGAR-Wingman-Waterproof-Microliner-01-I_ll-Be-Black-_Black_b4408b1d-058e-423d-a933-18d206385730.png?v=1592831244", 
+      
+      Price: "799.00 ",
+   
+    },
+
+    {
+      id: 3,
+      name: "SUGAR Aquaholic Priming Moisturizer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Aquaholic-Priming-Moisturizer-_-Open-Prdocut_Pigment.jpg?v=1586794134", 
+      
+      Price: "699.00 ",
+   
+    },
+
+    {
+      id: 3,
+      name: "SUGAR Aquaholic Priming Moisturizer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Aquaholic-Priming-Moisturizer-_-Open-Prdocut_Pigment.jpg?v=1586794134", 
+      
+      Price: "699.00 ",
+   
+    },
+
+    {
+      id: 4,
+      name: "SUGAR Bling Leader Illuminating Moisturizer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/WBG_01-Gold-Diggin__02-2_36f47c3b-bf42-4ffd-aa7f-7a3971e3ff6e.jpg?v=1579677440", 
+      
+      Price: "699.00 ",
+    },
+
+    {
+      id: 5,
+      name: "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/WBG_01-Gold-Diggin__02-2_36f47c3b-bf42-4ffd-aa7f-7a3971e3ff6e.jpg?v=1579677440",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Powder-Play-_translucent.png?v=1579676442", 
+      
+      Price: "599.00",
+    },
+
+    {
+      id: 6,
+      name: "SUGAR Powder Play Banana Compact",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Powder-Play-_Banana_-Open-Product-_-swatcht.png?v=1579756892", 
+      
+      Price: "599.00",
+    },
+
+    {
+      id: 7,
+      name: "SUGAR The Most Eligiblur Smoothing Primer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/9D5A7539.jpg?v=1586794313", 
+      
+      Price: "799.00",
+    },
+]
+
+//let query=document.getElementById("search_box");
+//query.addEventListener('click',inputfun)
+// function inputfun(){
+// console.log("ffdfd")
+// }
+
+
+document.getElementById("search_box").oninput=function() {
+  
+   let query=document.getElementById("search_box").value;
+   if(query==="sugar") {
+  let url=`https://rizofabbag.herokuapp.com/fabData?q=${query}`
+  getData(url)
+document.getElementById("search_box").style.border="none"
+   }
+   else {
+    console.log("not working")
+   }
+}
+
+
+async function getData(url) {
+  let res=await fetch(url);
+  let data= await res.json();
+  appendfun(data)
+}
+
+function appendfun(products) {
+  document.getElementById("results").innerHTML=null;
+  products.forEach((el,i)=>{
+    let img=document.createElement("img")
+    img.style.width="50px"
+    img.style.height="70px"
+    img.src=el.image;
+    let name=document.createElement("p")
+    name.innerText=el.name;
+    name.setAttribute("class","effect")
+    name.style.fontFamily="sans-sherif"
+    let price=document.createElement("p")
+    price.innerText=el.Price;
+    price.setAttribute("class","effect")
+    let box=document.createElement("div")
+    box.style.display="flex"
+    box.style.width="300px"
+    box.style.gap="15px"
+    box.addEventListener("click",function(){
+      sendData(el)
+    })
+    box.append(img,name,price)
+    setTimeout(()=>{
+     
+      document.getElementById("results").append(box)
+    },500)
+    
+  })
+}
+
+function sendData(product) {
+  localStorage.setItem("Product",JSON.stringify(product))
+}
 
    
 </script>

@@ -5,7 +5,7 @@ function navbar()
 
 </div>
 <div id = "right">
-    <div id ="sear"><a href=""><img src="https://cdn-icons-png.flaticon.com/128/7289/7289312.png" alt=""></a></div>
+    <div id ="sear"><p href=""><img src="https://cdn-icons-png.flaticon.com/128/7289/7289312.png" alt="" height='25px'></p></div>
     <div><a href=""><img src="https://cdn-icons-png.flaticon.com/128/1216/1216811.png" alt=""></a></div>
     <div><a href=""><img src="https://cdn-icons-png.flaticon.com/128/6423/6423509.png" alt=""></a></div>
     <div><a href=""><img src="https://cdn-icons-png.flaticon.com/128/7269/7269930.png" alt=""></a></div>
