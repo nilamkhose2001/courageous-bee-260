@@ -117,3 +117,24 @@
     margin-top: 5%; 
 
 }
+
+#headingThird{
+    font-family: roboto,sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#ThirdHr{
+    width:20%;
+    border:1px solid #E5B95F;
+}
+
+#more{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

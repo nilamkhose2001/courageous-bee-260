@@ -81,6 +81,71 @@ document.querySelector("#cartBtn").addEventListener("click",()=>{
    
 })
 
+let product_2 = [
+    {
+        id: 4,
+        image: 'https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-2---Skincare-3.gif?v=1655088937',
+        product_name: "Jun'22 The Make It Reign Fab Bag",
+        price: 599.00
+    },
+
+    {
+        id: 5,
+        image: 'https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Skincare-2-With-BONUS.gif?v=1652238042',
+        product_name: "May'22 The AweSummer May Fab Bag",
+        price: 599.00
+    },
+
+    {
+        id: 6,
+        image: 'https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3_1728264b-2e0f-4314-9a3c-0fde458d72a7.png?v=1649483317',
+        product_name: "Apr'22 The Sassy Spring Fab Bag",
+        price: 599.00
+    },
+
+    {
+        id: 7,
+        image: 'https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3.png?v=1646971494',
+        product_name: "Mar'22 The Empow-HER Fab Bag",
+        price: 599.00
+    },
+
+];
+
+
+
+let content = document.getElementById("more");
+
+let append2=(a)=>{
+    product_2.forEach((e)=>{
+        let {image,product_name,price} = e;
+        let div = document.createElement("div")
+        div.style.cursor = "pointer"
+        let img = document.createElement("img")
+        img.src = image;
+        img.style.height = "165px"
+        let p = document.createElement("p")
+        p.innerText = product_name
+        let dam = document.createElement(`p`);
+        dam.innerText = `from Rs ${price}`;
+        dam.style.fontStyle = "italic";
+        dam.style.opacity = "0.4"
+        dam.style.fontFamily = "poppins"
+        div.append(img, p, dam)
+        content.append(div)
+        img.addEventListener(`click`,()=>{
+            localStorage.setItem("product_li_2", JSON.stringify(e));
+            window.location.href = "./product_list_2.html"
+        })
+        
+    })
+}
+
+append2(product_2);
+
+localStorage.setItem("product_list", JSON.stringify(product_2));
+
+
 
 
 
