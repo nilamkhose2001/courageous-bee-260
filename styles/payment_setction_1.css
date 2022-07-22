@@ -140,71 +140,103 @@ input[type="text"] {
 #retCon > div {
   justify-content: space-evenly;
 }
-#submit{
-    color: white;
-    background-color: black;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: bold;
+#submit {
+  color: white;
+  background-color: black;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
 }
 
+#chktFoot {
+  display: flex;
 
-#chktFoot{
-    display: flex;
-   
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-#prodDet{
-    background-color: lightgrey;
+#prodDet {
+  background-color: lightgrey;
 }
-.box{
+.box {
   display: flex;
   gap: 40px;
   text-align: center;
   margin-top: 10%;
   margin-left: 20%;
 }
-.box>img{
+.box > img {
   border: 1px solid;
   width: 20%;
   height: 100px;
   border-radius: 10px;
   float: left;
 }
-.hr{
+.hr {
   width: 65%;
 }
 
-#promo{
+#promo {
   width: 20%;
   height: 55px;
   border-radius: 10px;
   border: 1px solid;
 }
-#promoCode{
+#promoCode {
   width: 80%;
   margin: auto;
   margin-left: 20%;
 }
-#subTotal{
+#subTotal {
   width: 60%;
   margin: auto;
 }
-#toTal{
+#toTal {
   float: right;
 }
-#shippingChrg{
+#shippingChrg {
   display: flex;
   width: 60%;
-margin: auto;
-justify-content: space-between;
+  margin: auto;
+  justify-content: space-between;
 }
-#totalAmt{
+#totalAmt {
   display: flex;
   width: 60%;
-margin: auto;
-justify-content: space-between;
-font-size: 25px;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+#payMethod {
+  width: 92%;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+  border: 1px solid;
+}
+#userDataLS {
+  width: 92%;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 40px;
+  border: 1px solid;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.oval {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.oval:checked {
+  background-color: gray;
 }
