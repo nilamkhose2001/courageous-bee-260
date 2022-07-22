@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/payment_setction_1.css">
+    <title>Shipping - FAB BAG - Checkout</title>
+</head>
+<body>
+    <div id="main">
+        <div id="contactInfo">
+            <div id="img">
+                <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO-FINAL.png?10537" alt="">
+            </div>
+            <p><Span id="crt"><a href="./checkout.html">Cart</a></Span> <i class="fa fa-angle-right"></i> <Span id="crt"><a href="./payment_section_1.html">Information</a></Span> <i class="fa fa-angle-right"></i> Shipping <i class="fa fa-angle-right"></i> Payment</p>
+            <div id="cntInfo">
+                
+                <div id="userDataLS"></div>
+                
+
+                <div id="shippingAddress">
+                    <p>Shipping Method</p>
+                    <div id="payMethod">
+                        <input class="oval" type="checkbox"><label>Free Standard Shipping ( Debit Card / Credit Card / Net Banking / PayTM )	Free</label>
+                        <br>
+                        <input class="oval" type="checkbox"><label>Cash On Delivery ( Unavailable on this product )	</label>
+                    </div>
+
+                    
+                    <div id="retCon">
+                        <div id="ret">
+                            <a href="./cart.html"><p><i class="fa fa-angle-left"></i> Return to cart</p></a>
+                            
+                        </div>
+                        <button id="submit" ><a href="./finalPayment.html">Continue to payment</a> </button>
+                    </div>
+               
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div id="chktFoot">
+                <p>Refund policy</p> 
+                <p>Privacy policy</p>
+                <p>Terms of service</p>
+                 
+            </div>
+        </div>
+        <div id="prodDet">
+            <div id="CheckOutProd"></div>
+            <hr class="hr">
+            <div id="promoCode">
+                <input class="Promo" type="text" placeholder="Discount Code">
+                <button id="promo">Apply</button>
+            </div>
+            <hr class="hr">
+            <div id="subTotal">
+               <Span>Subtotal</Span> <span id="toTal"></span>
+            </div>
+            <div id="shippingChrg">
+                <p>Shipping</p>
+                <p>Calculated at next step</p>
+            </div>
+            <hr class="hr">
+            <div id="totalAmt">
+                <Span>Total</Span> <span id="TotalAmt"> </span>
+             </div>
+        </div>
+</body>
+</html>
+<script src="./scripts/payment_section_1.js"></script>

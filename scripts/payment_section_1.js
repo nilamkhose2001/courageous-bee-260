@@ -55,24 +55,24 @@ function promoFunction() {
   }
 }
 
-document.querySelector("form").addEventListener("submit", continueFun);
+function displayData(){
+    let userData = JSON.parse(localStorage.getItem('userDetails')) || [];
+    document.querySelector("#userDataLS").innerHTML = null;
 
-let userData = JSON.parse(localStorage.getItem('userDetails')) || [];
 
-function continueFun(event) {
-  event.preventDefault();
+    userData.forEach(function(el){
+        
 
-  let userObj = {
-    phone: document.querySelector('#phone').value,
-    address: document.querySelector('#sameBox2').value,
-  }
-  userData.push(userObj);
-  localStorage.setItem("userDetails", JSON.stringify(userData));
+        let phone = document.createElement("p")
+        phone.innerText = `Contact : ${el.phone}`;
+        let address = document.createElement("p")
+        address.innerText = `Ship To : ${el.address}`;
+    
 
-  setTimeout(() => {
-    alert("Continue to Shipping")
-    window.location.href = 'payment_section_1.html';
-  }, 3000);
+
+        
+        document.querySelector("#userDataLS").append(phone,address);
+    })
 }
 
- 
+displayData();
