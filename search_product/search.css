@@ -1,9 +1,8 @@
 
 #container {
-    height: 60%;
-   
-   border: 1px solid blue;
+    height: 50%;
 
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
    
 }
 
@@ -12,11 +11,24 @@
     height: 60%;
     margin-top: 60px;
     margin-left: 20px;
-    
 
 }
-
-
+.modal-body{
+    margin-top: -128px;
+    position: relative;
+    background-color: white;
+    z-index: 9999;
+    display: none;
+    animation: right 0.5s;
+}
+@keyframes right{
+    from {
+      transform: translateY(-300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
 
  #grey {
     color: grey;
@@ -51,7 +63,6 @@ outline: none;
 
 #delete_icon {
     font-size: 25px;
-    
 }
 
 #icon_div {
@@ -74,3 +85,17 @@ background-color:white;
     background-color: white;
     margin-left: 1200px;
 }
+
+#results {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-left: 23px;
+    border-right-width: 100px;
+}
+
+.effect:hover {
+    color: orange;
+}
+/* 
+#box {
+    row-gap: 2px;
+} */
