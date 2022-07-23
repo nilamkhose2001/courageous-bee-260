@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <div id="navbar">
@@ -51,9 +53,76 @@
         
     </div>
 
+
+    <div id="testimonials">
+        <h1>TESTIMONIALS</h1>
+        <div class="sliding_texts">
+        
+            <div class="text">
+                <img src="./image/format_quote_open_icon_135581.png" alt="">
+                <p>I love each and every Fab Bag that I receive each month past three years. I am so much in love with fab bags and all the lovely products and cute little pouches that I get. I love Fab Bag.</p>
+                <span>-Munira</span>
+            </div>
+            <div class="text">
+                <img src="./image/format_quote_open_icon_135581.png" alt="">
+                <p>I I've been a regular Fab Bag subscriber for many years now and I must say that the Fab Bag team comes up with something or the other as a special attraction in the bag every month.  As always, thank you Fab Bag for making my day with this bag!!!</p>
+                <span>-Poonam</span>
+            </div>
+            <div class="text">
+                <img src="./image/format_quote_open_icon_135581.png" alt="">
+                <p>I like the fact that they offer high-quality products. Every single product from the bag stands out. It is a MUST TRY for every girl out there.</p>
+                <span>-Shikha</span>
+            </div>
+        </div>
+    </div>
+    
+    <h3 id="gossip">#TRENDINGNOW AT THE GOSSIP CORNER</h3>
+    <div id="insta_post">
+        <img src="./image/insta_photo/01.jpg" alt="">
+        <img src="./image/insta_photo/02.jpg" alt="">
+        <img src="./image/insta_photo/03.jpg" alt="">
+        <img src="./image/insta_photo/04.jpg" alt="">
+        <img src="./image/insta_photo/05.jpg" alt="">
+        <img src="./image/insta_photo/06.jpg" alt="">
+        <img src="./image/insta_photo/07.jpg" alt="">
+        <img src="./image/insta_photo/08.jpg" alt="">
+    </div>
+
+    <div id="space"></div>
+    
+    <div class="core">
+        <div id="ji"></div>
+        <div class="logo_slide">
+            <div class="item"><img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/sugar_1_160x160.jpg?v=1548837170" alt=""></div>
+            
+            <div class="item"><img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Tru_hair_logo_160x160.png?v=1625063080" alt=""></div>
+            <div class="item"><img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/WOC_Beauty_Logo_160x160.jpg?v=1602225835" alt=""></div>
+            <div class="item"><img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Baiser_India_Logo_160x160.jpg?v=1625063066" alt=""></div>
+            
+            <div class="item"><img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/719h_SoVZLL._SX466_160x160.jpg?v=1594029424" alt=""></div>
+        </div>
+    </div>
     
     <div class="footer"></div>
 
 </body>
 </html>
 <script src="./scripts/index.js" type="module" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    let b = JSON.parse(localStorage.getItem("cart"))
+    console.log(b.length)
+
+    $('.logo_slide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true
+
+
+    });
+</script>

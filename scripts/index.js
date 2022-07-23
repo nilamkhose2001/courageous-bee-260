@@ -45,6 +45,7 @@ let append=(data)=>{
     product.forEach((element)=>{
         let {image,product_name,price}=element
         let Div=document.createElement("div")
+        Div.style.cursor = "pointer";
         let img=document.createElement("img")
         img.src=image
         let t=document.createElement("h3")
