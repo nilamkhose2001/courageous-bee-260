@@ -18,6 +18,10 @@
 {
    padding-left: 15px;
 }
+.footer_a_1>h3
+{
+    text-align: left;
+}
 
 .footer_a_1>ul
 {
@@ -38,6 +42,10 @@
 {
    padding-left: 15px;
 }
+.footer_a_2>h3
+{
+    text-align: left;
+}
 .footer_a_2>h5
 {
     font-family: inherit;
@@ -53,6 +61,11 @@
 {
    padding-left: 15px;
 }
+.footer_a_3>h3
+{
+    text-align: left;
+}
+
 .footer_a_3>h5
 {
     font-family: inherit;
@@ -86,7 +99,7 @@
     align-items: center;
     justify-content: center;
 }
-.footer_b>div
+.footer_b>#icons
 {
     width : 22%;
     height : 70%;
@@ -94,9 +107,14 @@
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
-}
 
-.footer_b>div>a>img
+}
+.footer_b>#icons>a
+{
+    width : 17%;
+    height : 100%;
+}
+.footer_b>#icons>a>#tas
 {
    width : 100%;
    height : 100%;
