@@ -7,8 +7,8 @@
     <title>Fab Bag Payment Confirmation</title>
     <style>
       .optPage {
-        width: 20%;
-        height: 160px;
+        width: 30%;
+        height: 290px;
         padding-top: 10px;
         margin: auto;
         text-align: center;
@@ -16,18 +16,48 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 15px;
+      }
+      #msg{
+        width: 70%;
+        margin: auto;
+        border: 1px solid #c5ddc6;
+        background-color:#c5ddc6;
+        color: #34493c;
+        margin-bottom: 10px;
+      }
+      input[type=number]{
+        width: 68%;
+        height: 30px;
+        text-align: center;
+        font-size: 18px;
+        flex: 0 0 200px;
+      }
+      input[type=submit]{
+        width: 70%;
+        height: 37px;
+        text-align: center;
+        background-color: #6564ea;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
     <div class="optPage">
       <form>
-        <h1>Verify OTP</h1>
+        <h1>OTP Verification</h1>
+        <div id="msg">
+          <p>We've sent a verification code to your registered Mobile Number - ******7451</p>
+
+        </div>
         <input id="otp" type="number" placeholder="Enter OTP Here" />
         <br />
         <br />
-        <input type="submit" />
+        <input type="submit" value="Submit"/>
       </form>
     </div>
   </body>
@@ -42,7 +72,8 @@
       alert("OTP Verified Successful 🎉 🎉 🎉");
       window.location.href = "orderSuccess.html";
     } else {
-      alert("otp didn't match");
+      alert("Entered OTP is Incorrect");
     }
   }
+  
 </script>
