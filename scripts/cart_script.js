@@ -9,9 +9,9 @@ let count=document.querySelector("#count")
 count.innerText= cartcount.length
 
 
-import footer from "../components/footer.js"
+// import footer from "../components/footer.js"
 
-document.querySelector(".footer").innerHTML = footer();
+// document.querySelector(".footer").innerHTML = footer();
 
 let cartDataFromLS = JSON.parse(localStorage.getItem("cart"));
 console.log(cartDataFromLS)
