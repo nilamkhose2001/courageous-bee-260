@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       #container{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-around;
+       } 
+
+#box2{
+    font-family: sans-serif;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"></div>
+        <div id="box2">
+            <p>Home / SUGAR Cosmetics</p>
+            <div id="video">
+                <iframe width="400" height="260" src="https://www.youtube.com/embed/kfgTqrNsxh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+let item=JSON.parse(localStorage.getItem("Product"))
+let img=document.createElement("img")
+img.style.width="300px"
+img.src=item.image;
+let name=document.createElement("h1")
+name.innerText=item.name;
+let btn=document.createElement("button")
+btn.innerText="UNAVAILABLE";
+btn.style.width="700px"
+btn.style.height="26px"
+btn.style.fontSize="20px"
+btn.style.border="none"
+btn.style.color="white"
+btn.style.backgroundColor="#f2dcaf"
+let price=document.createElement("h1")
+price.innerText=`Rs.  ${item.Price}`;
+
+
+document.getElementById("box1").append(img)
+document.getElementById("box2").append(name,price,btn)
+
+
+
+
+</script>

@@ -7,9 +7,9 @@
 }
 
  #box{
-    margin-top: 40px;
-    height: 60%;
-    margin-top: 60px;
+
+    
+    margin-top: 70px;
     margin-left: 20px;
 
 }
@@ -18,7 +18,7 @@
     position: relative;
     background-color: white;
     z-index: 9999;
-    display: none;
+    display: block;
     animation: right 0.5s;
 }
 @keyframes right{
@@ -63,14 +63,14 @@ outline: none;
 
 #delete_icon {
     font-size: 25px;
+
 }
 
 #icon_div {
     margin-top: 60px;
     height: 20px;
-
     width: 20px;
-    margin-left: 1250px;
+   margin-left: 1140px;
     
 }
 
