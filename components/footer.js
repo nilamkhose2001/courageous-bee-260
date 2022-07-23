@@ -28,11 +28,11 @@ function footer()
         </div>
     </div>
     <div class = "footer_b">
-        <div>
-            <a href="https://www.facebook.com/fabbag"><img src="https://cdn-icons.flaticon.com/png/128/665/premium/665209.png?token=exp=1658327357~hmac=908aaff17eb014e698c8ba370083c913" alt=""></a>
-        <a href="https://twitter.com/thefabbag"><img src="https://cdn-icons.flaticon.com/png/128/4628/premium/4628695.png?token=exp=1658327396~hmac=19214dd9a70ac7f28c346c416059856d" alt=""></a>
-        <a href="https://www.instagram.com/thefabbag/"><img src="https://cdn-icons-png.flaticon.com/128/1362/1362857.png" alt=""></a>
-        <a href="https://www.youtube.com/fabbag"><img src="https://cdn-icons.flaticon.com/png/128/4628/premium/4628711.png?token=exp=1658327482~hmac=34e31463ee5d372d7cf6f34e70a0e65c" alt=""></a>
+        <div id = "icons">
+            <a href="https://www.facebook.com/fabbag"><img src="https://img.icons8.com/ios/2x/facebook-circled.png" alt="" id = "tas"></a>
+        <a href="https://twitter.com/thefabbag"><img src="https://img.icons8.com/ios/2x/twitter-circled.png" alt="" id = "tas"></a>
+        <a href="https://www.instagram.com/thefabbag/"><img src="https://cdn.icon-icons.com/icons2/1477/PNG/128/circlesocialinstagram_101831.png" alt="" id = "tas"></a>
+        <a href="https://www.youtube.com/fabbag"><img src="https://cdn.icon-icons.com/icons2/1477/PNG/128/circlesocialyoutube_101892.png" alt="" id = "tas"></a>
         </div>
         
     </div>

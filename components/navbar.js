@@ -4,9 +4,9 @@ document.querySelector("#navbar").innerHTML = navbar();
 
 
 
-let cart=JSON.parse(localStorage.getItem("basket")) || []
+let cartcount=JSON.parse(localStorage.getItem("cart")) || []
 
-console.log(cart.length)
+console.log(cartcount.length)
 
 let count=document.querySelector("#count")
-count.innerText= cart.length
+count.innerText= cartcount.length
