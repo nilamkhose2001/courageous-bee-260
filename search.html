@@ -60,7 +60,7 @@
 </body>
 </html>
 
-<script type="module">
+<script>
    let Navbar=document.getElementById("navbar")
     let minibox=  document.getElementById("search_box")
     
@@ -71,14 +71,14 @@
     }
 
   
-   import navbar from "./components/navbar.js"
+  //  import navbar from "./components/navbar.js"
   
-   Navbar.innerHTML=navbar()
+  //  Navbar.innerHTML=navbar()
 
    
 
    
-  document.getElementById('sear').addEventListener('click',searchfun)
+  document.getElementById('search_icon').addEventListener('click',searchfun)
 
   function searchfun(){
     document.getElementById("results").innerHTML=null;
@@ -86,10 +86,12 @@
     // console.log('open')
   }
   document.getElementById("delete_icon").onclick=function() {
-   // console.log("close")
+   console.log("close")
     // document.querySelector(".modal-body").style.transform='translateY(-300px)';
     // document.querySelector(".modal-body").style.transition='0.5s';
     document.querySelector(".modal-body").style.display='none'
+
+    window.location.href = "./index.html"
 }
 
 
@@ -205,17 +207,21 @@ function appendfun(products) {
     img.style.width="50px"
     img.style.height="70px"
     img.src=el.image;
+    img.style.cursor = "pointer"
     let name=document.createElement("p")
     name.innerText=el.name;
+    name.style.cursor = "pointer"
     name.setAttribute("class","effect")
     name.style.fontFamily="sans-sherif"
     let price=document.createElement("p")
     price.innerText=el.Price;
+    price.style.cursor = "pointer"
     price.setAttribute("class","effect")
     let box=document.createElement("div")
     box.style.display="flex"
     box.style.width="300px"
     box.style.gap="15px"
+    box.style.cursor = "pointer"
     box.addEventListener("click",function(){
       sendData(el)
     })
