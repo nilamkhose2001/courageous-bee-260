@@ -28,22 +28,23 @@
           
         </div>
         <div class="modal-body">
-          
+         
             <div id="container">
-
+             
                 <div id="icon_div"> <div class="modal-footer">
+                
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <span id="delete_icon"><i class="fa-solid fa-xmark"></i></span></button>
           
         </div>
                
              </div>
                  <div id="box">
+                  
                   <form action="">
                  <h5 id="grey">WHAT ARE YOU LOOKING FOR ?</h5>
                 
                  <input id="search_box" autocomplete="off" placeholder="search product" type="text"> <span id="search_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                 </form>
-
                 <div id="results">
 
                 </div>
@@ -80,6 +81,7 @@
   document.getElementById('sear').addEventListener('click',searchfun)
 
   function searchfun(){
+    document.getElementById("results").innerHTML=null;
     document.querySelector(".modal-body").style.display="block"
     // console.log('open')
   }
@@ -228,6 +230,7 @@ function appendfun(products) {
 
 function sendData(product) {
   localStorage.setItem("Product",JSON.stringify(product))
+  window.location.href="detailed.html"
 }
 
    
