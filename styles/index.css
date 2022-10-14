@@ -219,6 +219,7 @@ h3{
 }
 #insta_post{
     display: flex;
+    justify-content: center;
 }
 
 #insta_post img{
