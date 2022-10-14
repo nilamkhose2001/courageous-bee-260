@@ -233,7 +233,10 @@ h3{
 .logo_slide {
     
     margin: auto;
-    width: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* border: 2px solid green; */
 
 }
